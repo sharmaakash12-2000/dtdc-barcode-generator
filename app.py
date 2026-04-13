@@ -8,6 +8,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from datetime import datetime
 from io import BytesIO
 import os
+import pytz
 
 st.set_page_config(page_title="DTDC Barcode Generator", layout="wide")
 
@@ -164,7 +165,9 @@ if st.button("🚀 Generate Barcodes PDF"):
         )
 
         elements.append(Paragraph("<b>DTDC Courier - Barcode Labels</b>", title_style))
-        elements.append(Paragraph(f"Generated on: {datetime.now().strftime('%d-%m-%Y')}", styles['Normal']))
+        india = pytz.timezone('Asia/Kolkata')
+        current_time = datetime.now(india)
+        elements.append(Paragraph(f"Generated on: {current_time.strftime('%d-%m-%Y')}", styles['Normal']))
         elements.append(Spacer(1, 8))
 
         cols = 3
