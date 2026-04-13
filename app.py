@@ -40,7 +40,7 @@ def set_bg(image_file):
 
     /* Text color */
     h1, h2, h3, h4, h5, h6, label, p {{
-        color: white !important;
+        color: black;
     }}
 
     /* Buttons */
