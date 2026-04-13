@@ -2,3 +2,4 @@ streamlit
 python-barcode
 reportlab
 pillow
+pytz
