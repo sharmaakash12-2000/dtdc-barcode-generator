@@ -65,7 +65,7 @@ def set_bg(image_file):
     """, unsafe_allow_html=True)
 
 # 🔹 Set your image path
-set_bg("dtdc_bg.png")   # 👈 yaha apni image ka naam daal
+set_bg("bg.png")   # 👈 yaha apni image ka naam daal
 
 # =========================
 # TITLE
