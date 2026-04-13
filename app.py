@@ -57,8 +57,8 @@ def set_bg(image_file):
 
     /* Input fields */
     .stTextInput input, .stNumberInput input {{
-        background-color: rgba(255,255,255,0.9);
-        border-radius: 6px;
+        background-color: black;
+        border-radius: 10px;
     }}
 
     </style>
